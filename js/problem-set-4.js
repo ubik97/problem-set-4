@@ -3,9 +3,8 @@
  */
 
 function hello() {
-
-  // WRITE YOUR EXERCISE 1 CODE HERE
-
+  var div = document.getElementById("output1");
+  div.innerHTML="Hello, AP Computer Science Principles!";
   ////////////////// DO NOT MODIFY
   check("hello"); // DO NOT MODIFY
   ////////////////// DO NOT MODIFY
@@ -21,10 +20,10 @@ function helloAgain() {
   let name; // DO NOT MODIFY
   //////////// DO NOT MODIFY
 
-  // Use the name variable declared above to store the user's response. You
-  // do not need to re-declare it, only assign it a value.
+  name = prompt("Enter Your Name");
+  var div = document.getElementById("output2");
+  div.innerHTML="Hello, " + name + "!";
 
-  // WRITE YOUR EXERCISE 2 CODE HERE
 
   ///////////////////////////// DO NOT MODIFY
   check("helloAgain", name); // DO NOT MODIFY
@@ -40,11 +39,13 @@ function celsius() {
   //////////////////////////////////////////////////////// DO NOT MODIFY
   let cels = ((Math.random() * 1001) - 100).toFixed(2); // DO NOT MODIFY
   //////////////////////////////////////////////////////// DO NOT MODIFY
-
+  let far = ((cels * 9/5) + 32).toFixed(2);
+  var div = document.getElementById("output3");
+  div.innerHTML= cels + " degrees Celsius equals " + far + " degrees Fahrenheit.";
   // The above code generates a random number between -100 and 1000
   // (inclusive), and rounds this value to 2 decimal places.
 
-  // WRITE YOUR EXERCISE 3 CODE HERE
+
 
   ////////////////////////// DO NOT MODIFY
   check("celsius", cels); // DO NOT MODIFY
@@ -60,11 +61,9 @@ function fahrenheit() {
   //////////////////////////////////////////////////////// DO NOT MODIFY
   let fahr = ((Math.random() * 1001) - 100).toFixed(2); // DO NOT MODIFY
   //////////////////////////////////////////////////////// DO NOT MODIFY
-
-  // The above code generates a random number between -100 and 1000
-  // (inclusive), and rounds this value to 2 decimal places.
-
-  // WRITE YOUR EXERCISE 4 CODE HERE
+  let cels = ((fahr - 32) * 5/9).toFixed(2);
+  var div = document.getElementById("output4");
+  div.innerHTML= fahr + " degrees Fahrenheit equals " + cels + " degrees Celsius.";
 
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
