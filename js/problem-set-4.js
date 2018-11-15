@@ -79,10 +79,6 @@ function inches() {
   /////////////////////////////////////////////////////// DO NOT MODIFY
   let input = prompt("Enter a non-negative integer."); // DO NOT MODIFY
   /////////////////////////////////////////////////////// DO NOT MODIFY
-
-  // You are free to modify the value of inches, which you'll likely
-  // need to do. Please do not modify the value of input.
-
   ////////////////////// DO NOT MODIFY
   let inches = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
