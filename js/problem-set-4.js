@@ -84,11 +84,22 @@ function inches() {
   ////////////////////// DO NOT MODIFY
 
   if (inches >= 63360) {
-    inches = inches%63360
-    mile = math.floor(inches/63360)
+    inches = inches%63360;
+    mile = Math.floor(inches/63360);
   }
 
-  if (inch  )
+  if (inches >= 36) {
+    inches = inches%36;
+    yards = Math.floor(inches/36);
+  }
+
+  if (inches >= 12) {
+    inches = inches%12;
+    feet = Math.floor(inches/12)
+  }
+
+  var div = document.getElementById("output5");
+  div.innerHTML= miles + " miles," + yards + " yards," + feet + " feet," + inches + " inches.";
 
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
