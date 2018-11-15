@@ -71,7 +71,7 @@ function fahrenheit() {
 }
 
 /*
- * Inches. 5 points.
+ * Inches. 5 points. testing
  */
 
 function inches() {
