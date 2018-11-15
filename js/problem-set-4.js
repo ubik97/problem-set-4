@@ -83,7 +83,12 @@ function inches() {
   let inches = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 5 CODE HERE
+  if (inches >= 63360) {
+    inches = inches%63360
+    mile = math.floor(inches/63360)
+  }
+
+  if (inch  )
 
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
