@@ -139,7 +139,14 @@ function fluidOunces() {
   let fluidOunces = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 7 CODE HERE
+  let gallons = Math.floor(fluidOunces/128);
+  let quarts = Math.floor((fluidOunces%128)/32);
+  let pints = Math.floor((fluidOunces-(gallons*128)-(quarts*32))/16);
+  let cups = Math.floor((fluidOunces-(gallons*128)-(quarts*32)-(pints*16))/8);
+  let floz = fluidOunces-(gallons*128)-(quarts*32)-(pints*16)-(cups*8);
+  var div = document.getElementById("output7");
+  div.innerHTML= "Gallons: " + gallons + "<br/>Quarts: " + quarts + "<br/>Pints: " + pints + "<br/>Cups: " + cups + "<br/>Fluid Ounces: " + floz;
+
 
   /////////////////////////////// DO NOT MODIFY
   check("fluidOunces", input); // DO NOT MODIFY
