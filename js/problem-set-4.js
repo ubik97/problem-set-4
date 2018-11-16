@@ -111,7 +111,11 @@ function centimeters() {
   let centimeters = input; // DO NOT MODIFY
   /////////////////////////// DO NOT MODIFY
 
-  // WRITE YOUR EXERCISE 6 CODE HERE
+  let kilometers = Math.floor(centimeters/100000);
+  let meters = Math.floor((centimeters%100000)/100);
+  let centi = centimeters-(kilometers*100000)-(meters*100);
+  var div = document.getElementById("output6");
+  div.innerHTML= "Kilometers: " + kilometers + "<br/>Meters: " + meters + "<br/>Centimeters: " + centi;
 
   /////////////////////////////// DO NOT MODIFY
   check("centimeters", input); // DO NOT MODIFY
