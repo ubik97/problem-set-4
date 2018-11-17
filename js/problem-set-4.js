@@ -235,8 +235,17 @@ function change() {
   let nickels = Math.floor((pennies-(quarters*25)-(dimes*10))/5);
   let penny = Math.floor(pennies-(quarters*25)-(dimes*10)-(nickels*5));
   let coins = quarters + dimes + nickels + penny;
+
+  if coins = 1 {
   var div = document.getElementById("output10");
-  div.innerHTML= coins + " coins.";
+  div.innerHTML= coins + " coin.";
+}
+
+  if coins > 1 {
+    var div = document.getElementById("output10");
+    div.innerHTML= coins + " coins.";
+  }
+  
 
 
   ////////////////////////// DO NOT MODIFY
