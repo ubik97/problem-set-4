@@ -229,22 +229,13 @@ function change() {
   ////////////////////// DO NOT MODIFY
   let amount = input; // DO NOT MODIFY
   ////////////////////// DO NOT MODIFY
-  let pennies = (amount*100)
-  let quarters = Math.floor(pennies/25);
-  let dimes = Math.floor((pennies-(quarters*25))/10);
-  let nickels = Math.floor((pennies-(quarters*25)-(dimes*10))/5);
-  let penny = Math.floor(pennies-(quarters*25)-(dimes*10)-(nickels*5));
+  amount*=100
+  let quarters = Math.floor(amount/25);
+  let dimes = Math.floor((amount-(quarters*25))/10);
+  let nickels = Math.floor((amount-(quarters*25)-(dimes*10))/5);
+  let penny = Math.floor(amount-(quarters*25)-(dimes*10)-(nickels*5)/1);
   let coins = quarters + dimes + nickels + penny;
-
-  if (coins = 1) {
-    var div = document.getElementById("output10");
-    div.innerHTML= coins + " coin.";
-}
-
-  if (coins > 1) {
-    var div = document.getElementById("output10");
-    div.innerHTML= coins + " coins.";
-  }
+  document.getElementById("output10").innerHTML= coins + " coins.";
 
 
 
